@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>SKIN1004 Hyalu-Cica Silky-Fit Sun Stick | ستيك واقي شمس SPF50+ PA++++</title>
+  <meta name="description" content="ستيك واقي شمس كيميائي SPF50+ PA++++ بلمسة حريرية مطفية بدون آثار بيضاء. ترطيب فوري + تحكم بالدهون والمسام + حماية قوية. Made in Korea." />
+
+  <style>
+    :root{
+      /* Blue premium theme */
+      --bg:#F4FAFF;
+      --bg2:#EAF6FF;
+      --line:#D6E9F7;
+
+      --text:#0f172a;
+      --muted:#6b7280;
+
+      --brand:#2F8AD8;     /* main blue */
+      --brand2:#0B5AA0;    /* deep blue */
+      --chip:#EAF5FF;
+
+      --radius:16px;
+      --max:980px;
+      --shadow: 0 12px 26px rgba(2, 39, 76, .08);
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans Arabic", "Noto Sans";
+      color:var(--text);
+      line-height:1.75;
+      background:
+        radial-gradient(1100px 520px at 65% -10%, rgba(47,138,216,.22), transparent 60%),
+        radial-gradient(900px 420px at 0% 35%, rgba(47,138,216,.12), transparent 58%),
+        linear-gradient(180deg, var(--bg), var(--bg2));
+    }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 18px 14px 34px;
+    }
+
+    /* single flowing page (no stacked cards) */
+    .section{ padding: 18px 0; }
+    .divider{
+      height:1px;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+      margin: 6px 0;
+    }
+
+    .topTag{
+      display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+      color: var(--brand2);
+      font-weight: 900;
+      letter-spacing:.2px;
+    }
+    .dot{
+      width:10px;height:10px;border-radius:999px;
+      background: var(--brand);
+      box-shadow: 0 0 0 7px rgba(47,138,216,.14);
+    }
+
+    h1{
+      margin: 10px 0 6px;
+      font-size: clamp(22px, 3.4vw, 34px);
+      line-height:1.25;
+    }
+    .sub{
+      color:var(--muted);
+      margin: 0 0 12px;
+      font-size: 14.5px;
+    }
+
+    .badges{
+      display:flex; flex-wrap:wrap; gap:10px;
+      margin: 10px 0 14px;
+    }
+    .badge{
+      background: rgba(255,255,255,.62);
+      border: 1px solid var(--line);
+      padding: 8px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      display:flex; gap:8px; align-items:center;
+      backdrop-filter: blur(6px);
+    }
+    .badge b{color:var(--brand2)}
+    .badge .ico{width:18px;text-align:center}
+
+    .priceRow{
+      display:flex; align-items:flex-end; justify-content:space-between;
+      gap:12px; flex-wrap:wrap;
+      padding: 10px 0 2px;
+    }
+    .prices{
+      display:flex; gap:12px; align-items:flex-end; flex-wrap:wrap;
+    }
+    .before{
+      color:#9aa3af;
+      text-decoration: line-through;
+      font-weight: 800;
+      font-size: 15px;
+    }
+    .after{
+      font-size: 28px;
+      font-weight: 1000;
+      color: var(--brand2);
+      letter-spacing:.2px;
+    }
+    .save{
+      background: var(--chip);
+      border: 1px solid rgba(47,138,216,.28);
+      color: var(--brand2);
+      padding: 8px 10px;
+      border-radius: 999px;
+      font-weight: 900;
+      font-size: 13px;
+      box-shadow: 0 10px 22px rgba(47,138,216,.12);
+      white-space:nowrap;
+    }
+
+    /* Gallery 6 images */
+    .gallery{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:10px;
+      margin-top: 14px;
+    }
+    .gimg{
+      position:relative;
+      border-radius: 14px;
+      overflow:hidden;
+      background: linear-gradient(135deg, rgba(47,138,216,.14), rgba(255,255,255,.35));
+      border: 1px solid var(--line);
+      aspect-ratio: 1 / 1;
+      box-shadow: 0 10px 20px rgba(2,39,76,.06);
+    }
+    .gimg img{
+      width:100%; height:100%;
+      object-fit: cover;
+      display:block;
+    }
+    .gcap{
+      position:absolute;
+      inset:auto 10px 10px 10px;
+      background: rgba(255,255,255,.76);
+      border: 1px solid rgba(214,233,247,.9);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 12.5px;
+      color:#334155;
+      backdrop-filter: blur(6px);
+    }
+    @media (max-width: 720px){
+      .gallery{grid-template-columns: repeat(2, 1fr)}
+    }
+
+    h2{
+      margin:0 0 6px;
+      font-size: 18px;
+      letter-spacing:.2px;
+    }
+    p{margin: 8px 0}
+    .muted{color:var(--muted)}
+    .highlight{
+      display:inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: rgba(47,138,216,.12);
+      border: 1px solid rgba(47,138,216,.20);
+      color: var(--brand2);
+      font-weight: 900;
+      font-size: 12.5px;
+      margin-inline-start: 6px;
+    }
+
+    .bullets{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:8px 16px;
+      margin-top: 10px;
+      padding-inline-start: 18px;
+    }
+    .bullets li{margin:0}
+    @media (max-width: 720px){
+      .bullets{grid-template-columns: 1fr}
+    }
+
+    .items{ margin-top: 10px; }
+    .item{
+      padding: 10px 0;
+      border-bottom: 1px dashed rgba(214,233,247,.95);
+    }
+    .item:last-child{border-bottom:0}
+    .item b{color: var(--brand2)}
+    .mini{
+      font-size: 13.5px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    /* Reviews: all visible */
+    .reviewsHead{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:10px; flex-wrap:wrap;
+      margin-top: 4px;
+    }
+    .rating{
+      display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+      color: var(--brand2);
+      font-weight: 1000;
+    }
+    .stars{letter-spacing: 1px; font-size: 16px}
+    .count{color:var(--muted); font-weight:800; font-size: 13.5px}
+    .reviews{
+      margin-top: 10px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:12px 18px;
+    }
+    .rev{
+      border-top: 1px solid var(--line);
+      padding-top: 10px;
+    }
+    .rev .who{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:10px;
+      font-weight: 900;
+      color:#0f172a;
+      font-size: 13.5px;
+    }
+    .rev .who span{color:var(--muted); font-weight:800; font-size:12.5px}
+    .rev .txt{margin: 6px 0 0; color:#111827; font-size: 13.8px}
+    @media (max-width: 720px){
+      .reviews{grid-template-columns: 1fr}
+    }
+
+    /* Why us */
+    .why{
+      margin-top: 10px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 16px;
+      padding-inline-start: 18px;
+    }
+    .why li{margin:0}
+    @media (max-width: 720px){
+      .why{grid-template-columns: 1fr}
+    }
+
+    /* FAQ */
+    details{
+      border-top: 1px solid var(--line);
+      padding: 10px 0;
+    }
+    summary{
+      cursor:pointer;
+      font-weight: 1000;
+      color: var(--brand2);
+      list-style: none;
+    }
+    summary::-webkit-details-marker{display:none}
+    summary:after{
+      content:"＋";
+      float:left;
+      color: var(--brand2);
+      font-weight: 1000;
+    }
+    details[open] summary:after{content:"—"}
+    details p{margin: 8px 0 0; color:#111827}
+
+    .note{
+      font-size: 12.8px;
+      color: var(--muted);
+      margin-top: 10px;
+    }
+
+    .ctaStrip{
+      margin-top: 14px;
+      padding: 12px 0 0;
+      border-top: 1px solid var(--line);
+      display:flex; justify-content:space-between; align-items:center;
+      gap:10px; flex-wrap:wrap;
+    }
+    .ctaText b{color:var(--brand2)}
+    .ctaHint{color: var(--muted); font-size: 13px}
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+
+    <!-- HERO -->
+    <section class="section" aria-label="Sun Stick Hero">
+      <div class="topTag"><span class="dot"></span> SKIN1004 • Hyalu-Cica Silky-Fit Sun Stick 💙 • Made in Korea 🇰🇷</div>
+
+      <h1>ستيك واقي شمس كيميائي SPF50+ PA++++ — لمسة حريرية مطفية بدون أي آثار بيضاء</h1>
+      <p class="sub">ينساب بسلاسة على البشرة ويقدم <b>ترطيب فوري</b> + <b>تحكم بالدهون والمسام</b> + <b>حماية قوية من الأشعة فوق البنفسجية</b>… بملمس قابل للتنفس ومناسب للاستخدام اليومي.</p>
+
+      <div class="badges" role="list">
+        <div class="badge"><span class="ico">🧴</span> SPF50+ PA++++ <b>حماية عالية</b></div>
+        <div class="badge"><span class="ico">✨</span> Silky-Fit Finish <b>مطفّي حريري</b></div>
+        <div class="badge"><span class="ico">🚫</span> No White Cast <b>بدون طبقة بيضاء</b></div>
+        <div class="badge"><span class="ico">👜</span> Stick Rotating <b>عملي للحمل</b></div>
+      </div>
+
+      <div class="priceRow">
+        <div class="prices">
+          <div class="before">السعر قبل: 1350 جنيه</div>
+          <div class="after">999 جنيه</div>
+        </div>
+        <div class="save">خصم جامد 🔥 (لفترة محدودة)</div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- 6 IMAGES -->
+      <div class="gallery" aria-label="Gallery 6 Images">
+        <div class="gimg">
+          <img src="https://i.postimg.cc/G3TLQwDs/2.jpg" alt="Hyalu-Cica Sun Stick Image 1">
+      
+        </div>
+        <div class="gimg">
+          <img src="https://i.postimg.cc/v8xYzFnV/51i3Yi_HSx_CL_AC_UF350_350_QL80.jpg" alt="Hyalu-Cica Sun Stick Image 2">
+       
+        </div>
+        <div class="gimg">
+          <img src="https://i.postimg.cc/DyV2pjQS/91d21d15_98a5_4b65_b7e2_57056d108de5.avif" alt="Hyalu-Cica Sun Stick Image 3">
+       
+        </div>
+        <div class="gimg">
+          <img src="https://i.postimg.cc/c4qsk97Q/centella_hyalu_cica_silky_fit_sun_stick_20g.jpg" alt="Hyalu-Cica Sun Stick Image 4">
+       
+        </div>
+        <div class="gimg">
+          <img src="https://i.postimg.cc/4NCJ2Lvv/IMG_0283.webp" alt="Hyalu-Cica Sun Stick Image 5">
+     
+        </div>
+        <div class="gimg">
+          <img src="https://i.postimg.cc/28pz9cd7/photo_٢٠٢٦_٠١_٠٥_١٦_٣٤_٣٠.jpg" alt="Hyalu-Cica Sun Stick Image 6">
+    
+        </div>
+<div class="gimg">
+          <img src="https://i.postimg.cc/rF68ZnGh/skin1004_hyalu_cica_protector_solar_facial_en_stick_silku_fit_spf50_pa_4_86367.jpg">
+     
+        </div>
+
+<div class="gimg">
+          <img src="https://i.postimg.cc/PrGtV3bS/SKIN1004Madagascar_Hyalu_Cica_Sun_Stick2.webp">
+       
+        </div>
+      </div>
+
+     
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- BENEFITS -->
+    <section class="section" aria-label="Benefits">
+      <h2>فوائد المنتج <span class="highlight">ترطيب • دهون • حماية UV</span></h2>
+      <ul class="bullets">
+        <li>حماية قوية من الشمس <b>SPF50+ PA++++</b></li>
+        <li>ملمس حريري مطفي بدون لزوجة</li>
+        <li>لا يترك أي آثار بيضاء (No White Cast)</li>
+        <li>مناسب لإعادة التطبيق خلال اليوم بسهولة</li>
+        <li>يساعد على التحكم في إفراز الدهون واللمعان</li>
+        <li>يرطب البشرة فورًا ويتركها ناعمة</li>
+      </ul>
+
+      <div class="items">
+        <div class="item">
+          <b>Texture & Color 💙</b>
+          <div class="mini">ستيك ناعم ينتشر بسهولة، يترك لمسة حريرية قابلة للتنفس مع حماية UV قوية… واللون الأزرق مشتق طبيعيًا من مستخلص بذور الشيا بدون ألوان صناعية.</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- WHY IT'S DIFFERENT (features from your images/text) -->
+    <section class="section" aria-label="Key Technology">
+      <h2>إيه اللي بيميزه؟</h2>
+      <div class="items">
+        <div class="item">
+          <b>Porous Polymer</b>
+          <div class="mini">تشكل طبقة رقيقة خفيفة تعطي ملمس ناعم “porcelain-like” بدون ثقل.</div>
+        </div>
+        <div class="item">
+          <b>Botanical Tannins</b>
+          <div class="mini">مركبات تساعد في التحكم بالدهون والعناية بالمسام.</div>
+        </div>
+        <div class="item">
+          <b>Blue Agave Leaf Extract</b>
+          <div class="mini">يساعد على إزالة خلايا الجلد الميتة العنيدة لبشرة أنعم.</div>
+        </div>
+        <div class="item">
+          <b>Vitamin E Derivative</b>
+          <div class="mini">مضاد أكسدة يساعد في تقليل الضرر الالتهابي بعد التعرض للأشعة فوق البنفسجية.</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- KEY INGREDIENTS -->
+    <section class="section" aria-label="Key Ingredients">
+      <h2>المكونات الرئيسية</h2>
+
+      <div class="items">
+        <div class="item">
+          <b>🔹 مستخلص عشبة سنتيلا اسياتيكا (Centella Asiatica)</b>
+          <div class="mini">يساعد على تهدئة البشرة ودعم تجددها، وتعزيز مظهر صحي للبشرة المتعبة، مع حماية من الجذور الحرة.</div>
+        </div>
+
+        <div class="item">
+          <b>🔹 حمض الهيالورونيك (5 طبقات)</b>
+          <div class="mini">يرطب بعمق ويحافظ على الرطوبة لفترة أطول — لبشرة ناعمة ورطبة بدون ثقل.</div>
+        </div>
+
+        <div class="item">
+          <b>🔹 مستخلص قشر الكستناء (Tannin)</b>
+          <div class="mini">يساعد على العناية بالمسام والدهون للحفاظ على بشرة صافية ومظهر مطفي.</div>
+        </div>
+      </div>
+
+      <p class="note"><b>الحجم:</b> 20g • <b>بلد المنشأ:</b> Korea 🇰🇷</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- WHO IS IT FOR -->
+    <section class="section" aria-label="Suitable For">
+      <h2>مناسب لمين؟</h2>
+      <ul class="bullets">
+        <li>البشرة المختلطة والدهنية (تحكم باللمعان)</li>
+        <li>أي شخص عايز واقي شمس سهل لإعادة التطبيق</li>
+        <li>اللي بيكره الإحساس الدهني أو اللزج</li>
+        <li>اللي بيضايقه الـ white cast</li>
+        <li>للخروجات والسفر والشنطة اليومية</li>
+        <li>ينفع قبل المكياج وبعده (حسب تفضيلك)</li>
+      </ul>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- REVIEWS (ALL VISIBLE: 18) -->
+    <section class="section" aria-label="Reviews">
+      <div class="reviewsHead">
+        <h2>تقييمات العملاء</h2>
+        <div class="rating" aria-label="Overall Rating">
+          <span class="stars">★★★★★</span>
+          <span>4.9/5</span>
+          <span class="count">• 18 تقييم</span>
+        </div>
+      </div>
+      <p class="muted">كل التقييمات ظاهرة بالكامل ✅</p>
+
+      <div class="reviews">
+        <div class="rev">
+          <div class="who">سلمى <span>★★★★★</span></div>
+          <p class="txt">ملمس حريري فعلًا… ولا في أي طبقة بيضا، وده كان أهم حاجة عندي.</p>
+        </div>
+        <div class="rev">
+          <div class="who">منة <span>★★★★★</span></div>
+          <p class="txt">سهل جدًا في إعادة التطبيق وأنا برا… ومش بيبوّظ المكياج.</p>
+        </div>
+        <div class="rev">
+          <div class="who">داليا <span>★★★★★</span></div>
+          <p class="txt">مطفّي ومش دهني… حسّيت إنه قلل لمعان الـ T-zone.</p>
+        </div>
+        <div class="rev">
+          <div class="who">نور <span>★★★★★</span></div>
+          <p class="txt">بيترطب بسرعة ويمتص… من غير لزوجة ولا ريحة مزعجة.</p>
+        </div>
+        <div class="rev">
+          <div class="who">مريم <span>★★★★★</span></div>
+          <p class="txt">حجمه عملي جدًا في الشنطة… وبستخدمه طول اليوم بسهولة.</p>
+        </div>
+        <div class="rev">
+          <div class="who">يارا <span>★★★★☆</span></div>
+          <p class="txt">حلو جدًا… بس بحب أحط كمية كويسة عشان أحس بالحماية.</p>
+        </div>
+        <div class="rev">
+          <div class="who">هبة <span>★★★★★</span></div>
+          <p class="txt">ولا أثر أبيض خالص… حتى على بشرتي القمحية.</p>
+        </div>
+        <div class="rev">
+          <div class="who">آية <span>★★★★★</span></div>
+          <p class="txt">الترطيب لطيف ومش تقيل… مناسب للصيف جدًا.</p>
+        </div>
+        <div class="rev">
+          <div class="who">شيماء <span>★★★★★</span></div>
+          <p class="txt">بيسيب إحساس ناعم زي البرايمر… وده فرق معايا.</p>
+        </div>
+        <div class="rev">
+          <div class="who">رانيا <span>★★★★★</span></div>
+          <p class="txt">ممتاز للتحكم في الدهون… البشرة بتفضل مطفية وقت أطول.</p>
+        </div>
+        <div class="rev">
+          <div class="who">نورا <span>★★★★★</span></div>
+          <p class="txt">الستيك الدوّار فكرة عبقرية… أسرع من الكريم بكتير.</p>
+        </div>
+        <div class="rev">
+          <div class="who">بسمة <span>★★★★★</span></div>
+          <p class="txt">مش بيعمل حبوب عندي… وده نادر مع واقيات الشمس.</p>
+        </div>
+        <div class="rev">
+          <div class="who">فاطمة <span>★★★★☆</span></div>
+          <p class="txt">كويس جدًا… بس لازم تجديد كل شوية زي أي واقي.</p>
+        </div>
+        <div class="rev">
+          <div class="who">جنى <span>★★★★★</span></div>
+          <p class="txt">بشرتي بتحمر من الشمس… معاه الموضوع اتحسن واضح.</p>
+        </div>
+        <div class="rev">
+          <div class="who">ريم <span>★★★★★</span></div>
+          <p class="txt">ملمسه بيخلي البشرة ناعمة… ومن غير stickiness خالص.</p>
+        </div>
+        <div class="rev">
+          <div class="who">إسراء <span>★★★★★</span></div>
+          <p class="txt">الحماية ممتازة… وخصوصًا مع إعادة التطبيق كل شوية.</p>
+        </div>
+        <div class="rev">
+          <div class="who">هنا <span>★★★★★</span></div>
+          <p class="txt">ألوانه والـ texture حلوين… واللون الأزرق شكله مميز فعلًا.</p>
+        </div>
+        <div class="rev">
+          <div class="who">سارة <span>★★★★★</span></div>
+          <p class="txt">أفضل Sun Stick جربته… مريح جدًا للبشرة المختلطة.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- WHY BUY FROM US -->
+    <section class="section" aria-label="Why Buy">
+      <h2>ليه تشتري من متجرنا؟</h2>
+      <ul class="why">
+        <li>✅ منتجات أصلية 100%</li>
+        <li>✅ مصدر موثوق</li>
+        <li>✅ شحن سريع داخل مصر</li>
+        <li>✅ دعم قبل وبعد الطلب</li>
+        <li>✅ تغليف آمن ومحترف</li>
+        <li>✅ ثقة آلاف العملاء</li>
+      </ul>
+
+      <div class="ctaStrip">
+        <div class="ctaText">
+          <b>السعر الآن:</b> 999 جنيه <span class="muted">بدل</span> <span class="before" style="font-size:14px">1350</span>
+        </div>
+       
+
+      <!-- PLACE ORDER FORM HERE -->
+      <div style="margin-top:10px"></div>
+      <!-- الصق هنا كود الفورم أو زر "اطلبي الآن" من EasyOrders -->
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- FAQ -->
+    <section class="section" aria-label="FAQ">
+      <h2>الأسئلة الشائعة</h2>
+
+      <details>
+        <summary>هل هو واقي شمس كيميائي؟</summary>
+        <p>نعم ✅ ستيك واقي شمس كيميائي بمعامل حماية SPF50+ PA++++.</p>
+      </details>
+
+      <details>
+        <summary>هل يترك طبقة بيضاء؟</summary>
+        <p>لا ✅ مصمم بملمس حريري بدون أي white cast.</p>
+      </details>
+
+      <details>
+        <summary>ينفع للبشرة الدهنية؟</summary>
+        <p>يناسب جدًا، لأنه يساعد في التحكم بالدهون واللمعان مع لمسة مطفية.</p>
+      </details>
+
+      <details>
+        <summary>إزاي أستخدمه وإمتى أجدده؟</summary>
+        <p>اتحطي كمية مناسبة على الوجه قبل التعرض للشمس، وجدديه كل 2-3 ساعات (خصوصًا مع التعرق/الخروج).</p>
+      </details>
+
+      <details>
+        <summary>هل اللون الأزرق صبغة؟</summary>
+        <p>لا ✅ اللون الأزرق مشتق طبيعيًا من مستخلص بذور الشيا بدون ألوان صناعية.</p>
+      </details>
+
+     
+    </section>
+
+  </main>
+</body>
+</html>
